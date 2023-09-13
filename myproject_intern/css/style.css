@@ -1,0 +1,84 @@
+/* Reset default margins and paddings */
+body, h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+h2{
+	color: greenyellow;
+}
+h3{
+	color: cyan;
+}
+
+
+/* Set a background color and font family */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Add a header with a background color and center the text */
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style for the main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for the product items */
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+/* Style for the filter sections */
+.list-group {
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    border: none;
+    background-color: transparent;
+    padding: 5px 0;
+}
+
+/* Style for checkboxes */
+.list-group-item label {
+    display: block;
+    cursor: pointer;
+}
+
+/* Style for the search results */
+.searchResult {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Style for responsive layout */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .col-md-3,
+    .col-md-9 {
+        flex-basis: 100%;
+    }
+}
